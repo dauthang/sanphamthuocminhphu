@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { DashBoardComponent } from './dash-board/dash-board.component';
-
+import { DetailComponent } from './detail/detail.component';
 const routes: Routes = [
   {
     path: '',
@@ -11,8 +11,8 @@ const routes: Routes = [
     children: []
   },
   {
-    path: '**',
-    component: NotFoundComponent,
+    path: 'detail',
+    component: DetailComponent,
     pathMatch: 'full'
   }
 ];

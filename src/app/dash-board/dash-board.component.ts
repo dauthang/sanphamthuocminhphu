@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-dash-board',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashBoardComponent implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router) {
+    
+   }
 
   ngOnInit() {
   }
 
+  public detail(item?: any) {
+    return this.router.navigate(['/detail']);
+  }
 }
