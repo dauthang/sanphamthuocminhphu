@@ -22,7 +22,7 @@
 
   <nav class="navbar navbar-default fixed-top" style="background-color: white;">
     <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
-    <div class="container">
+    <div id="header" class="container">
       <div class="navbar-header">
         <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
           <span class="sr-only">Toggle navigation</span>
@@ -30,21 +30,12 @@
           <span class="icon-bar bar2"></span>
           <span class="icon-bar bar3"></span>
         </button>
-        <img alt="..." src="../../assets/img/imgHd/loi-ngo.jpg" />
+        <a href=""><img alt="..." src="../../assets/img/logo/logo.jpg" /></a>
       </div>
       <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right navbar-uppercase">
           <li>
             <a href="">Trang chủ</a>
-          </li>
-          <li>
-            <a href="#about">Giới thiệu</a>
-          </li>
-          <li>
-            <a href="#products">Sản phẩm</a>
-          </li>
-          <li>
-            <a href="#contacts">Liên hệ</a>
           </li>
         </ul>
       </div>
@@ -56,35 +47,567 @@
 
   <div class="container">
     <div id="demo" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="card">
-                    
-                    <div class="row">
-                        <div class="col-md-6 text-center align-self-center"> <img class="img-fluid" src="../../assets/img/sanpham/nutriMil.png"> </div>
-                        <div class="col-md-6 info">
-                          <h3>Thành phần</h3>
-                          <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>   
-                          <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>   
-                          <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>   
-                          <h3>Công dụng</h3>   
-                          <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
-                          <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
-                          <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
-                          <h3>Liều dùng</h3>   
-                          <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>     
-                          <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>                       
-                        </div>
-                    </div>
-                </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+
+            <div *ngIf="id === 1" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang3-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
             </div>
+
+            <div *ngIf="id === 2" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang3-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 3" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang4-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 4" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang5-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 5" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang4-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 6" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang5-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 7" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang6-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 8" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang6-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 9" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang7-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 10" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang7-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 11" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang8-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 12" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang10-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 13" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang8-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 14" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang10-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 15" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang11-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 16" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang11-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 17" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang12-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 18" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang12-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 19" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang13-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 20" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang14-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 21" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang13-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 22" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang14-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 23" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang15-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 24" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang15-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 25" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang16-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 26" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang16-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 27" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang17-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 28" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang17-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 29" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang18-anh1.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+            <div *ngIf="id === 30" class="row">
+              <div class="col-md-6 text-center align-self-center"> <img class="img-fluid"
+                  src="../../assets/img/sanpham/Trang18-anh2.jpg"> </div>
+              <div class="col-md-6 info">
+                <h3>Thành phần</h3>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <p>-Vitamin D3 (min) ....................................1.782.108 UI</p>
+                <h3>Công dụng</h3>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <p>- Tăng cường quá trình trao đổi chất hổ trợ quá trình tăng trưởng và phát triển</p>
+                <h3>Liều dùng</h3>
+                <p>- Sử dụng định kỳ (bổ sung) 3-4g/kg thức ăn</p>
+                <p>- Khi tôm cá giảm ăn, môi trường thay đổi, mới bị bệnh mới tăng liều gấp đôi</p>
+              </div>
+            </div>
+
+
+
+            <div class="row">
+              <div class="text-center">
+                <a (click)="backHome()" class="btn btn-primary">Quay lại</a>
+              </div>
+            
+            </div>
+          </div>     
         </div>
+      </div>
     </div>
-</div>
+  </div>
   <!-- detail-end -->
 
 
-  <footer class="footer footer-big footer-color-black" data-color="black">
+  <footer class="footer footer-big footer-color-black" data-color="black" id="contacts">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-8">
@@ -110,23 +633,17 @@
         </div>
         <div class="col-md-3 col-sm-8">
           <div class="info">
-            <h5 class="title"> Help and Support</h5>
+            <h5 class="title"> Hoox</h5>
             <nav>
               <ul>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <a href="">Trang chủ</a>
                 </li>
                 <li>
-                  <a href="#">How it works</a>
+                  <a href="#about">Giới thiệu</a>
                 </li>
                 <li>
-                  <a href="#">Terms &amp; Conditions</a>
-                </li>
-                <li>
-                  <a href="#">Company Policy</a>
-                </li>
-                <li>
-                  <a href="#">Money Back</a>
+                  <a href="#products">Sản phẩm</a>
                 </li>
               </ul>
             </nav>
@@ -139,7 +656,7 @@
             <nav>
               <ul>
                 <li>
-                  <a href="#" class="btn btn-social btn-facebook btn-simple">
+                  <a href="https://www.facebook.com/LuonCoKySuTuVanTrucTiep"  class="btn btn-social btn-facebook btn-simple">
                     <i class="fa fa-facebook-square"></i> Facebook
                   </a>
                 </li>
@@ -164,10 +681,6 @@
         </div>
       </div>
       <hr>
-      <div class="copyright">
-        ©
-        <script> document.write(new Date().getFullYear())</script> Creative Tim, made with love
-      </div>
     </div>
   </footer>
 
