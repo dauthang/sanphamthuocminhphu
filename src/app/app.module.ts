@@ -22,7 +22,6 @@ import { DetailComponent } from './detail/detail.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-  
   ],
   providers: [NotFoundService],
   bootstrap: [AppComponent]

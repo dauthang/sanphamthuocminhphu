@@ -368,7 +368,7 @@
                     </div>
                   </div>
                 </div>
-         
+
                 <!-- page 3 -->
                 <div class="row" *ngIf="page === 3">
                   <div class="col-md-3">
@@ -561,13 +561,17 @@
 
                 <div class="row">
                   <a (click)="changePreview()" style="background-color: white;" class="btn btn-warning">Trở về</a>
-                  <a *ngIf="page!=1" (click)="changeIndex(1)" style="background-color: white;" class="btn btn-warning">1</a>
+                  <a *ngIf="page!=1" (click)="changeIndex(1)" style="background-color: white;"
+                    class="btn btn-warning">1</a>
                   <a *ngIf="page==1" style="background-color: red;" class="btn btn-warning">1</a>
-                  <a *ngIf="page!=2" (click)="changeIndex(2)" style="background-color: white;" class="btn btn-warning">2</a>
+                  <a *ngIf="page!=2" (click)="changeIndex(2)" style="background-color: white;"
+                    class="btn btn-warning">2</a>
                   <a *ngIf="page==2" style="background-color: red;" class="btn btn-warning">2</a>
-                  <a *ngIf="page!=3" (click)="changeIndex(3)" style="background-color: white;" class="btn btn-warning">3</a>
+                  <a *ngIf="page!=3" (click)="changeIndex(3)" style="background-color: white;"
+                    class="btn btn-warning">3</a>
                   <a *ngIf="page==3" style="background-color: red;" class="btn btn-warning">3</a>
-                  <a *ngIf="page!=4" (click)="changeIndex(4)" style="background-color: white;" class="btn btn-warning">4</a>
+                  <a *ngIf="page!=4" (click)="changeIndex(4)" style="background-color: white;"
+                    class="btn btn-warning">4</a>
                   <a *ngIf="page==4" style="background-color: red;" class="btn btn-warning">4</a>
                   <a (click)="changeNext()" style="background-color: white;" class="btn btn-warning">Tiếp theo</a>
                 </div>
@@ -588,7 +592,8 @@
       </div>
 
       <div class="tab-content">
-        <p class="text-justify" style="text-indent: 30px;">Công ty TNHH đầu tư và phát triển Minh Phú cung cấp các thuốc thủy sản uy tín được nhiều người tiêu dùng lựa chọn. Chúng tôi cam kết :
+        <p class="text-justify" style="text-indent: 30px;">Công ty TNHH đầu tư và phát triển Minh Phú cung cấp các thuốc
+          thủy sản uy tín được nhiều người tiêu dùng lựa chọn. Chúng tôi cam kết :
         </p>
         <p class="text-justify" style="text-indent: 30px;">- Cung cấp sản phẩm chính hãng, đảm bảo chất lượng
         </p>
@@ -596,11 +601,13 @@
         </p>
         <p class="text-justify" style="text-indent: 30px;">- Nhiều dịch vụ tiện ích: Tư vấn miễn phí, giao hàng tận nhà
         </p>
-        <p class="text-justify" style="text-indent: 30px;">Liên hệ với <b>sanphamminhphu.com</b> để được tư vấn và đặt mua các loại thuốc thực phẩm chức năng tốt nhất.
+        <p class="text-justify" style="text-indent: 30px;">Liên hệ với <b>sanphamminhphu.com</b> để được tư vấn và đặt
+          mua các loại thuốc thực phẩm chức năng tốt nhất.
         </p>
-        <p class="text-justify" style="text-indent: 30px;">Liên hệ ngay : <a href="tel:0949.509.8888" style="color: brown;"> 0949.509.8888</a>
+        <p class="text-justify" style="text-indent: 30px;">Liên hệ ngay : <a href="tel:0949.509.8888"
+            style="color: brown;"> 0949.509.8888</a>
         </p>
-        
+
 
       </div>
 
@@ -624,7 +631,8 @@
         </div>
 
         <div class="button-get-started">
-          <a href="https://www.facebook.com/LuonCoKySuTuVanTrucTiep" class="btn btn-danger btn-fill btn-lg">Liên hệ chúng tôi</a>
+          <a href="https://www.facebook.com/LuonCoKySuTuVanTrucTiep" class="btn btn-danger btn-fill btn-lg">Liên hệ
+            chúng tôi</a>
         </div>
       </div>
     </div>
@@ -680,7 +688,8 @@
             <nav>
               <ul>
                 <li>
-                  <a href="https://www.facebook.com/LuonCoKySuTuVanTrucTiep" class="btn btn-social btn-facebook btn-simple">
+                  <a href="https://www.facebook.com/LuonCoKySuTuVanTrucTiep"
+                    class="btn btn-social btn-facebook btn-simple">
                     <i class="fa fa-facebook-square"></i> Facebook
                   </a>
                 </li>
@@ -711,8 +720,18 @@
       </div>
     </div>
   </footer>
-
+  <a href="tel:+84972939830"><div class="hotline">
+    <span class="before-hotline">Hotline:</span>
+    <span class="hotline-number">0949.509.8888</span>
+    </div></a>
+    <div class="mobile-hotline">
+    <div class="mobile-hotline-left">
+    <a href="https://www.m.me/LuonCoKySuTuVanTrucTiep" target="blank">Chat Facebook</a>
+    </div>
+    <div class="mobile-hotline-right"><a href="tel:+0949.509.8888" target="blank">Gọi điện ngay</a></div>
+    </div>
 </body>
+  
 
 <!--   core js files    -->
 <script src="../../assets/js/jquery.min.js" type="text/javascript"></script>
@@ -726,5 +745,7 @@
 
 <!--   file where we handle all the script from the Gaia - Bootstrap Template   -->
 <script type="text/javascript" src="../../assets/js/gaia.js"></script>
+
+<!-- Load Facebook SDK for JavaScript -->
 
 </html>
